@@ -1,0 +1,19 @@
+A New Unstructured Model of the Atmosphere
+
+Hilary Weller, Henry G. Weller and Aime' Fournier
+
+Unstructured models for the atmosphere allow local refinement of regions of interest or regions of high error. However these models have not so far been able to compete with the accuracy and efficiency of fully structured, uniform resolution models of the atmosphere. As massively parallel computers take over from vector machines, the relative efficiency of unstructured models improves. We present solutions to some of the long-standing problems with the accuracy of atmosphere models with any kind of local refinement. There are a number of desirable features of a model that have not before been achieved together:
+
+A mesh with local refinement
+
+A fully staggered algorithm similar to the Arakawa C-grid
+
+Accuracy at least second order globally
+
+Conservation of momentum, potential vorticity, energy and mass
+
+No artificial viscosity, diffusion or filtering
+
+An implicit solution allowing a long time step
+
+This is achieved using a combination of a co-located A-grid and a staggered C-grid. We present results on various mesh structures: the cubed sphere, latitude-longitude with refinement patterns, hexagonal icosohedral and triangular icosohedral. The stability of the algorithm is tested by inserting a very narrow, high mountain which does not generate grid-scale oscillations as would be the case with traditional co-located methods.

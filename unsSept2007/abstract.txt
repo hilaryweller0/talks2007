@@ -1,0 +1,8 @@
+Unstructured Finite Volume Modelling for the Atmosphere
+Hilary Weller and Henry Weller
+
+There is still much scope for improvement in numerical algorithms for adaptive modelling of the atmosphere. If they are to compete with the non-adaptive techniques used operationally, adaptive schemes may need to have all of the properties of conservation of mass, momentum and some higher moments, high order accuracy, accurate wave dispersion and efficiency. 
+
+We present solutions of the shallow water equations solved using OpenFOAM. This finite volume library uses arbitrarily unstructured meshes (cells can take any three dimensional shape). The order of accuracy is >= 2, local conservation is exact, wave dispersion is as accurate as a structured staggered mesh and the implicity solution means that the flow Courant number can be greater than one. We will describe how some of this has bean achieved and then present results comparing different mesh structures. 
+
+Without higher order accuracy, scale interactions between regions of mesh with different resolution cannot be captured. Without the accurate wave dispersion, grid scale forcing and sharp mesh refinement patterns lead to spurious grid scale waves.

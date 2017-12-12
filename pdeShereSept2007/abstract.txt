@@ -1,0 +1,8 @@
+Numerical Techniques for Adaptive Modelling of the Atmosphere
+Hilary Weller and Henry Weller
+
+There is still much scope for improvement in numerical algorithms for adaptive modelling of the atmosphere. If they are to compete with the non-adaptive techniques used operationally, adaptive schemes may need to have all of the properties of conservation of mass, momentum and some higher moments, high order accuracy, accurate wave dispersion and efficiency. 
+
+We present solutions of the shallow water equations using a new finite volume technique which has the above properties. We will outline how some of these problems have been solved and the consequences of not maintaining these properties. We will show how accuracy can be reduced at refinement patterns and how this can have a detrimental affect on global accuracy. 
+
+We will also present results using various fixed meshes; reduced latitude-longitude with and without structured refinement patterns, the cubed sphere and hexaganol and triangular icosohedral meshes all with identical numerical algorithms. As well as showing the advantages and disadvantages of different fixed meshes, this helps to decide what mesh topology should be used to create a refined region. 

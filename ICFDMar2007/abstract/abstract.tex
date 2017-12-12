@@ -1,0 +1,36 @@
+\documentclass[a4paper,12pt]{article}
+\textheight 9.75in
+\topmargin -0.35in
+\textwidth 6.5in
+\oddsidemargin 0.0in
+\parindent=0in
+\parskip=12pt
+
+\usepackage{times}
+
+\pagestyle{empty}
+
+\renewcommand{\baselinestretch}{1}
+
+\begin{document}
+
+{
+   \centering 
+   {
+        \Large \bf
+        Unstructured Modelling of the Global Atmosphere
+        
+   }
+    Dr Hilary Weller \\
+    Walker Institute, Department of Meteorology, Reading  University \\
+    Poster presentation preferred \\ \ \\
+}
+
+Simulations of the global atmosphere for weather and climate forecasting require very fast and accurate solutions. Therefore high order finite differences on regular structured grids are used operationally. However this precludes the use of local refinement. Techniques allowing local refinement are either too expensive (for example high order finite element techniques) or have lower order accuracy at changes in resolution (for example traditional unstructured finite volume). 
+
+We present solutions of the shallow water equations on the globe with flow over 
+a mid-latitude mountain solved using a finite volume model written using OpenFOAM. A 2D projection of the mesh includes quadrilaterals and pentagons and 2:1 refinement patterns. The results are as accurate as equivalent fourth \hbox{order} spectral methods. Traditionally the order of the accuracy is reduced at a refinement pattern when using finite volume. When the mesh is refined around the mountain, errors from the refinement pattern accumulate and the global accuracy is infact reduced over a 15 day simulation. We have therefore introduced a scheme which fits a 3D cubic polynomial approximately on an arbitrarily unstructured mesh (using any shapes). This is an extention of Lashley (2002). Using this scheme the accuracy is not reduced at the refinement pattern and refinement of the mountain improves the accuracy after a 15 day simulation. 
+
+This is a much more severe test of local mesh refinement for global simulation than has been presented before, but also a more realistic test if these techniques are to be used operationally. These efficient, high order schemes may make it possible for local mesh refinement to be used by weather and climate forecast models. 
+
+\end{document}
